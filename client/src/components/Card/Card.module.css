@@ -1,0 +1,34 @@
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: hsla(0, 0%, 1%, 0.281);
+    border-radius: 20px;
+    width: 400px;
+}
+.container:hover{
+    transform: scale(1.1);
+    transition: 500ms;
+}
+.link{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 700;
+}
+.h1{
+    display: flex;
+    justify-content: center;
+}
+.p{
+    display: flex;
+    justify-content: center;
+}
+.img{
+    margin: auto;
+    border-radius:150px;
+}
+.h1Fit{
+    display: flex;
+    justify-content: center;
+    font-size: 1.9rem;
+    padding: 3px;
+}

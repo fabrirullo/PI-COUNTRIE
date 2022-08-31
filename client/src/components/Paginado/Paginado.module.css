@@ -1,0 +1,27 @@
+.ul{
+    display: flex;
+    justify-content: center;
+}
+.li{
+    list-style: none;
+}
+.btn{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+.btn:hover{
+    transform: scale(1.2);
+    background-color: aquamarine;
+    cursor: pointer;
+}
+.displaynone{
+    display: none;
+}
+@media (max-width: 1000px){
+    .ul{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(40px,1fr));
+        max-width: 1200px;
+    }
+}

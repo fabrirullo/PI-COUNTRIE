@@ -1,0 +1,69 @@
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-left: 1rem;
+}
+.input{
+    background-color: rgba(255, 255, 255, 0);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid white ;
+    color: white;
+    padding-top: 0.2rem;
+    padding-left: 6rem;
+    border-radius: 15px;
+    height: 3rem;
+    width: 20rem;
+    
+}
+
+.btnSch{
+    border-radius: 10px;
+    cursor: pointer;
+    height: 3rem;
+    margin-top: 3px;
+    background-color: rgba(0, 0, 0, 0.438);
+    
+}
+.btnSch:hover{
+    background-color: bisque;
+    transition: 700ms;
+}
+.btnCrt{
+    background-color: rgba(255, 255, 255, 0.432);
+    border-radius: 9px;
+    color:black;
+    cursor: pointer;
+    float: right;
+    font-family: 'Roboto Serif', sans-serif;
+    font-weight: 100;
+    height: 2rem;
+    margin-right: 5rem;
+    margin-top: 4rem;
+}
+.btnCrt:hover{
+    background-color: white;
+    transition: 700ms;
+
+}
+@media (max-width: 600px) {
+    .btnCrt{
+        width: max-content;
+        position: absolute;
+        top: 10%;
+        left: 35%;
+    }
+    .nav{
+        padding-left: 0%;
+    }
+}
+.searcher{
+    margin-top: 5rem;
+}

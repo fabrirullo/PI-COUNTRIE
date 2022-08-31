@@ -1,0 +1,79 @@
+.wrapper{
+    background-image: url(../utils/fondoPrinc.jpg);
+    background-position: 90%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 80rem;
+}
+.container{
+    background-color: hsla(0, 0%, 1%, 0.473);
+    border-radius: 30px;
+    font-family: 'Roboto Serif', sans-serif;
+    height: 50%;
+    margin: auto;
+    width: 30%;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes example {
+    0%   { transform: translateY(-120%)}
+    100% { transform: translateY(0)}
+  }
+.img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 300px;
+}
+@media (max-width:800px) {
+    .img{
+        width: 80%;
+    }
+    .container{
+        width: 80%;
+        height: 80%;
+    }
+}
+.alignItems{
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+}
+p{
+    display: flex;
+    justify-content: center;
+    color: whitesmoke
+}
+h1{
+    padding-top: 1rem;
+}
+.activitiesDiv{
+    display: flex;
+    justify-content: space-evenly;
+}
+.activitiesWrapper{
+    font-family: 'Roboto Serif', sans-serif;
+    
+}
+.btnStyle{
+    background-color: rgba(0, 0, 0, 0.418);
+    font-family: 'Roboto Serif', sans-serif;
+    border-radius: 5px;
+    height: 2.5rem;
+    cursor: pointer;
+    font-size:1.5rem;
+    color: #fff;
+}
+
+.btnMargin{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    animation-name: btn;
+    animation-duration: 2s;
+}
+
+.btnStyle:hover{
+    background-color: aquamarine;
+    transition: 700ms;
+}

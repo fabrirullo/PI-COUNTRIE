@@ -1,0 +1,89 @@
+.background{
+    background-image: url(../utils/actividad.jpg);
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+}
+.container{
+    background-color: hsla(0, 0%, 1%, 0.281);
+    border-radius: 15px;
+    font-family: 'Roboto Serif', sans-serif;
+    height: 80%;
+    margin-top: 3rem;
+    margin: auto;
+    width: 25%;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes example {
+    0%   { transform: translateY(-120%)}
+    100% { transform: translateY(0)}
+  }
+.centering{
+    margin: auto;
+    width: max-content;
+    color: whitesmoke;
+}
+select{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    color: #292b2c;
+    background-color: #fff;
+    padding: 0 10px;
+}
+.h1{
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+}
+.labelStyle{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    height: 1.6rem;
+    width: 15rem;
+    border-radius: 8px;
+}
+.btnStyle{
+    background-color: rgba(0, 0, 0, 0.418);
+    font-family: 'Roboto Serif', sans-serif;
+    border-radius: 5px;
+    height: 2.5rem;
+    cursor: pointer;
+    font-size:1.5rem;
+    color: #fff;
+    
+}
+.btnStyle:hover{
+    background-color: black;
+    transition: 700ms;
+}
+.btnPosition{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+.btnMargin{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    animation-name: btn;
+    animation-duration: 2s;
+}
+@keyframes btn {
+    0%   { transform: translateX(-120%)}
+    100% { transform: translateX(0)}
+}
+@media (max-width:800px){
+    .container{
+        width: 60%;
+        height: 70%;
+    }
+    .labelStyle{
+        width:min-content;
+    }
+}
