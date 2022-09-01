@@ -6,13 +6,14 @@
     list-style: none;
 }
 .btn{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.644);
     color: black;
     border-radius: 5px;
+    font-size: 1rem;
 }
 .btn:hover{
     transform: scale(1.2);
-    background-color: aquamarine;
+    background-color:white ;
     cursor: pointer;
 }
 .displaynone{

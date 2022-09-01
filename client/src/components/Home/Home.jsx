@@ -29,7 +29,7 @@ const Home = () => {
                 setcountryPerPage(9)
             }
         }   
-    
+
 
 
     useEffect(() => {
@@ -37,9 +37,7 @@ const Home = () => {
         dispatch(getActivities());
         }, [dispatch]);
 
-    useEffect(() => {
-        setcurrentPage(1);
-        }, [allCountries]); //para que en un filtro no te muestre la segunda pag
+
 
         function handleCountries(e){
             e.preventDefault()
@@ -71,7 +69,6 @@ const Home = () => {
 
     return (
         <>
-        {currentCountry.length ?
          
         <div className='background'>
             
@@ -141,7 +138,7 @@ const Home = () => {
                                 />
             </div>        
         </div>
-        : <Loading/ >}        
+      
         </>
     );
 }

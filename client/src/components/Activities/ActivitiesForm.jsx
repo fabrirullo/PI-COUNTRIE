@@ -106,7 +106,7 @@ const Form = () => {
           name="country"
           onChange={handleChange}
           />
-        </div>
+        </div>       
         <div className={styles.centering}>
           <p>Duration</p>
           <input
@@ -148,3 +148,28 @@ const Form = () => {
   )
 }
 export default Form; 
+
+
+
+
+/*                 
+   function handleDelete(el){
+        setInput({
+            ...form,
+            country: form.country.filter(c => c !== el)
+        })
+    }
+
+      <div>
+            <select className={styles.select1} onChange={(e) => handleChange(e)} name= "country">
+
+            {allCountries.map((e) => (
+                <option value={e.name}> {e.name} </option>
+                  ) )}
+
+            </select>
+                {errors.country && (
+                <p className="error">{form.country}</p>
+                  )} 
+                <ul>{form.country.map(el => <li onClick={()=> handleDelete(el)}>{el}</li>)}</ul>
+        </div> */
