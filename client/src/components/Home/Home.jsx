@@ -37,6 +37,9 @@ const Home = () => {
         dispatch(getActivities());
         }, [dispatch]);
 
+    useEffect(()=>{
+        setcurrentPage(1);
+    },[allCountries]);
 
 
         function handleCountries(e){
@@ -69,7 +72,7 @@ const Home = () => {
 
     return (
         <>
-         
+        {currentCountry.length ?          
         <div className='background'>
             
             <Navbar />
@@ -138,7 +141,7 @@ const Home = () => {
                                 />
             </div>        
         </div>
-      
+        : <Loading/ >}      
         </>
     );
 }

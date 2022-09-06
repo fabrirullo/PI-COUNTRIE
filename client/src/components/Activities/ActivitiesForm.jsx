@@ -96,6 +96,7 @@ const Form = () => {
             onChange={handleChange}/>
           
         </div>
+
         <div className={styles.centering}>
           <p>Country</p>
           <input 
@@ -106,7 +107,8 @@ const Form = () => {
           name="country"
           onChange={handleChange}
           />
-        </div>       
+        </div>
+        
         <div className={styles.centering}>
           <p>Duration</p>
           <input
@@ -148,6 +150,9 @@ const Form = () => {
   )
 }
 export default Form; 
+
+
+
 
 
 
